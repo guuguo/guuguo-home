@@ -19,14 +19,24 @@ footer p{
 }
 .pagination .current, .pagination a {
     outline: 0;
-    border: 1px;
+    border: 1px #dcdbde solid;
     background-color: transparent;
     font-size: .9rem;
-    padding: .5rem .75rem;
+    width:2.25rem;
+    height :2.25rem;
+    text-align:center;
     line-height: 1.25;
-    border-radius: .125rem;
+    margin:0 2px;
+    display: flex;
+    align-items: center;
+   justify-content :center;
+    border-radius: .25rem;
     transition: var(--post-bkg-color) .2s ease-in-out;
-    border-color: #959da5;
+    color:#898990;
+}
+.pagination .current {
+    background-color: #ededef;
+    color:#75767d;
 }
 .pagination {
     display: -ms-flexbox;

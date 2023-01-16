@@ -58,7 +58,6 @@ if (page.title) {
         window.onload=function(){
             let headerEle = document.querySelector('header');
             document.body.addEventListener("scroll",()=>{
-                console.log(document.body.scrollTop)
                 if(document.body.scrollTop===0) {
                     headerEle.style.setProperty('box-shadow', "0 5px 6px 0 rgba(0,0,0,0)")
                 }else{
