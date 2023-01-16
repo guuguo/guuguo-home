@@ -391,6 +391,12 @@ comment:
 category:
     enable: true
 
+#---------------------------
+# 关于页
+# About Page
+#---------------------------
+about:
+    enable: true
 
 #---------------------------
 # 归档页
@@ -435,7 +441,7 @@ links:
 # Talk Page
 #---------------------------
 talk:
-    enable: true
+    enable: false
 
     # Page Title
     title: 说说

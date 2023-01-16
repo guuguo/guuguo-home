@@ -40,20 +40,25 @@
     height: 90px;
     width 206px;
 }
+
+.card-slogan:hover {
+    transform: scale(1.01);
+}
+
 .index-card{
     border-radius:  0.5rem;
     margin: auto
     max-width 700px;
-    //box-shadow: var(--shadow)
+    box-shadow: var(--shadow)
     padding: 28px;
     margin-bottom: 1.8rem;
     padding-top: 5px; 
-    //background-color: var(--post-bkg-color)
+    background-color: var(--post-bkg-color)
     display: flex;
     flex-flow: row;
-    //transform: scale(1);
-    //z-index: auto;
-    //transition: box-shadow .3s,transform .3s,z-index .3s;
+    transform: scale(1);
+    z-index: auto;
+    transition: box-shadow .3s,transform .3s,z-index .3s;
 }
 
 
@@ -62,12 +67,12 @@
         color: var(--first-text-color);
     }
 }
-//.index-card:hover{
-//    box-shadow: var(--shadow-hover);
-//    transform: scale(1.01);
-//    transition: all .3s;
-//    z-index :100000;
-//}
+.index-card:hover{
+    box-shadow: var(--shadow-hover);
+    transform: scale(1.01);
+    transition: all .3s;
+    z-index :100000;
+}
 .post-cover{
     width: 100px;
     height: 100px;

@@ -12,6 +12,7 @@ if (page.title) {
     <% } %>
     <link rel="apple-touch-icon" sizes="76x76" href="<%- url_for(theme.global.apple_touch_icon) %>">
     <link rel="icon" type="image/png" href="<%- url_for(theme.global.favicon) %>">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     <title><%= title %></title>
     <% if (theme.global.force_https) { %>
@@ -26,7 +27,7 @@ if (page.title) {
     <%- partial('_partial/style.ejs') %>
     
 
-    <% if ((is_post() || is_page()) || page.layout == "category" || page.layout == "archive" || page.layout == "links" || page.layout == "search" || page.layout == "tag" || page.layout == "tags" || page.layout == "talk" || page.layout == "search") { %>
+    <% if ((is_post() || is_page()) || page.layout == "category"|| page.layout == "about"  || page.layout == "archive" || page.layout == "links" || page.layout == "search" || page.layout == "tag" || page.layout == "tags" || page.layout == "talk" || page.layout == "search") { %>
         <!--
         <link rel="stylesheet" href="<%- url_for('/css/page.css') %>" media="print"
             onload="this.media='all';this.onload=null">
@@ -53,4 +54,17 @@ if (page.title) {
         }
     </script>
     <% } %>
+    <script>
+        window.onload=function(){
+            let headerEle = document.querySelector('header');
+            document.body.addEventListener("scroll",()=>{
+                console.log(document.body.scrollTop)
+                if(document.body.scrollTop===0) {
+                    headerEle.style.setProperty('box-shadow', "0 5px 6px 0 rgba(0,0,0,0)")
+                }else{
+                    headerEle.style.setProperty('box-shadow', "0 5px 6px 0 rgba(0,0,0,.08)")
+                }
+            })
+        }
+    </script>
 </head>

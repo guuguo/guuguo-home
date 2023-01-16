@@ -99,6 +99,9 @@
 #page-main,footer,.p-btn{
     display: none;
 }
+.mg-top{
+    padding-top: 30px;
+}
 html,body{
     margin: 0;
     padding: 0;
@@ -120,11 +123,6 @@ a {
 a:hover{
     color: var(--second-link-color);
 }
-.main-content,.post-card-main{
-    margin: 30px;
-}
-
-
 
 @media (max-width: 410px){
     .post-card-main{
@@ -186,6 +184,8 @@ header {
     z-index: 10;
     /*border-bottom: 1px solid var(--bkg-m);*/
     background-color: var(--nav-bkg);
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0);
+    transition:box-shadow .5s;
 }
 header .header__left, header .header__right {
     display: flex;

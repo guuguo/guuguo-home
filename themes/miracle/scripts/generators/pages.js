@@ -50,7 +50,16 @@ hexo.extend.generator.register('_links', function(locals) {
     };
   }
 });
-
+// generate links page
+hexo.extend.generator.register('_about', function(locals) {
+  if (this.theme.config.about.enable !== false) {
+    return {
+      path  : 'about/index.html',
+      data  : locals.theme,
+      layout: 'about'
+    };
+  }
+});
 // generate search page
 hexo.extend.generator.register('_search', function(locals) {
   if (this.theme.config.search.enable !== false) {
